@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MediaPlayerPrototype2_SQLInteroperability"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        d:DesignHeight="1080" d:DesignWidth="1920">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <!--Option Bar-->
+        <Grid Grid.Row="0" Background="LightGray">
+            <TextBox Width="200" Height="40" HorizontalAlignment="Left" Margin="5" VerticalContentAlignment="Center" FontSize="16" Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}" />
+            <Button Width="75" Height="40" HorizontalAlignment="Left" Margin="210, 0, 0, 0" BorderBrush="Black" BorderThickness="2" Content="Add" FontSize="16" FontWeight="Bold" Click="Add_Button_Click"/>
+        </Grid>
     </Grid>
 </Window>
