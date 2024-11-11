@@ -15,9 +15,10 @@
         </Grid.RowDefinitions>
 
         <!--Option Bar-->
-        <Grid Grid.Row="0" Background="LightGray">
-            <TextBox Width="200" Height="40" HorizontalAlignment="Left" Margin="5" VerticalContentAlignment="Center" FontSize="16" Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}" />
+        <Grid Grid.Row="0" Background="Gray">
+            <TextBox Name="txtInput" Width="200" Height="40" HorizontalAlignment="Left" Margin="5" VerticalContentAlignment="Center" FontSize="16" Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}" />
             <Button Width="75" Height="40" HorizontalAlignment="Left" Margin="210, 0, 0, 0" BorderBrush="Black" BorderThickness="2" Content="Add" FontSize="16" FontWeight="Bold" Click="Add_Button_Click"/>
+            <Button Width="75" Height="40" HorizontalAlignment="Left" Margin="290, 0, 0, 0" BorderBrush="Black" BorderThickness="2" Content="Clear All" FontSize="16" FontWeight="Bold" Click="ClearAll_Click"/>
         </Grid>
     </Grid>
 </Window>
